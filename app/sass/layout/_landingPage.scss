@@ -1,11 +1,26 @@
+@use "../utils/" as u;
 main {
   .hero__image {
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
-    img {
+    @include u.breakpoint("1200") {
+      position: relative;
+      width: 100%;
+    }
+    .hero__img {
       height: 100%;
+      @include u.breakpoint("1200") {
+        display: none;
+      }
+    }
+    .hero__img--mobile {
+      display: none;
+      @include u.breakpoint("1200") {
+        display: block;
+        width: 100%;
+      }
     }
   }
 }
@@ -15,6 +30,12 @@ main {
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
+      @include u.breakpoint("800") {
+        font-size: 2.5rem;
+      }
+      @include u.breakpoint("500") {
+        font-size: 2rem;
+      }
     }
     .description {
       margin-bottom: 1rem;
@@ -35,5 +56,10 @@ main {
   .wrapper {
     width: 500px;
     margin-top: 7rem;
+    @include u.breakpoint("1200") {
+      width: 100%;
+      padding-bottom: 2rem;
+      margin-top: 2rem;
+    }
   }
 }

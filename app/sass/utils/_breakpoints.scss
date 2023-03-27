@@ -10,6 +10,7 @@ $breakpoints-down: (
   "1000": 62.5em,
   "1100": 68.75em,
   "1200": 75em,
+  "1350": 84.375em,
 );
 
 @mixin breakpoint($size) {

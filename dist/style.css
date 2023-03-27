@@ -75,6 +75,11 @@ li:last-child {
   max-width: 80%;
   margin: 0 auto;
 }
+@media (max-width: 84.375em) {
+  .container {
+    max-width: 90%;
+  }
+}
 
 header {
   padding: 2rem 0;
@@ -86,13 +91,43 @@ main .hero__image {
   right: 0;
   height: 100%;
 }
-main .hero__image img {
+@media (max-width: 75em) {
+  main .hero__image {
+    position: relative;
+    width: 100%;
+  }
+}
+main .hero__image .hero__img {
   height: 100%;
+}
+@media (max-width: 75em) {
+  main .hero__image .hero__img {
+    display: none;
+  }
+}
+main .hero__image .hero__img--mobile {
+  display: none;
+}
+@media (max-width: 75em) {
+  main .hero__image .hero__img--mobile {
+    display: block;
+    width: 100%;
+  }
 }
 
 main .hero__content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 50em) {
+  main .hero__content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 31.25em) {
+  main .hero__content h1 {
+    font-size: 2rem;
+  }
 }
 main .hero__content .description {
   margin-bottom: 1rem;
@@ -110,6 +145,13 @@ main .hero__content .btn {
 main .wrapper {
   width: 500px;
   margin-top: 7rem;
+}
+@media (max-width: 75em) {
+  main .wrapper {
+    width: 100%;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+  }
 }
 
 .btn-primary {
