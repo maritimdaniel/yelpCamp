@@ -17,3 +17,15 @@ body {
   font-family: "Archivo", sans-serif;
   background-color: hsla(30, 35%, 64%, 0.1);
 }
+
+body {
+  .flex {
+    display: flex;
+  }
+  .center {
+    align-items: center;
+  }
+  .sb {
+    justify-content: space-between;
+  }
+}

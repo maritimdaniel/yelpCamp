@@ -18,6 +18,16 @@ body {
   background-color: hsla(30, 35%, 64%, 0.1);
 }
 
+body .flex {
+  display: flex;
+}
+body .center {
+  align-items: center;
+}
+body .sb {
+  justify-content: space-between;
+}
+
 h1,
 h2,
 h3,
@@ -33,7 +43,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.2;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   color: rgb(56, 56, 56);
 }
@@ -42,7 +52,7 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: inherit;
+  display: inline-block;
 }
 
 input {
@@ -59,4 +69,52 @@ ul {
 
 li:last-child {
   margin-right: 0;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+main .hero__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+main .hero__image img {
+  height: 100%;
+}
+
+main .hero__content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+main .hero__content .description {
+  margin-bottom: 1rem;
+}
+main .hero__content .checkmark {
+  margin-bottom: 1rem;
+}
+main .hero__content .checkmark img {
+  margin-right: 0.5rem;
+}
+main .hero__content .btn {
+  margin-bottom: 2rem;
+}
+
+main .wrapper {
+  width: 500px;
+  margin-top: 7rem;
+}
+
+.btn-primary {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
