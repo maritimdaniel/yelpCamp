@@ -1,0 +1,20 @@
+$breakpoints-down: (
+  "200": 12.5em,
+  "300": 18.75em,
+  "400": 25em,
+  "500": 31.25em,
+  "600": 37.5em,
+  "700": 43.75em,
+  "800": 50em,
+  "900": 56.25em,
+  "1000": 62.5em,
+  "1100": 68.75em,
+  "1200": 75em,
+);
+
+@mixin breakpoint($size) {
+  @media (max-width: map-get($breakpoints-down,
+    $size)) {
+    @content;
+  }
+}

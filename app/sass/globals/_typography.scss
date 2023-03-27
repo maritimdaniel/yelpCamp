@@ -1,0 +1,42 @@
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgb(56, 56, 56);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:last-child {
+  margin-right: 0;
+}
