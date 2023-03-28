@@ -16,6 +16,7 @@ body {
   height: 100%;
   font-family: "Archivo", sans-serif;
   background-color: hsla(30, 35%, 64%, 0.1);
+  color: rgb(99, 99, 99);
 }
 
 body .flex {
@@ -45,7 +46,7 @@ p {
   line-height: 1.2;
   font-size: 1rem;
   font-weight: 500;
-  color: rgb(56, 56, 56);
+  color: rgb(99, 99, 99);
 }
 
 a,
@@ -72,7 +73,7 @@ li:last-child {
 }
 
 .container {
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
 }
 @media (max-width: 84.375em) {
@@ -82,7 +83,14 @@ li:last-child {
 }
 
 header {
-  padding: 2rem 0;
+  padding: 3rem 0;
+}
+header a {
+  color: rgb(99, 99, 99);
+  font-weight: 500;
+}
+header a:hover {
+  color: rgb(16, 16, 16);
 }
 
 main .hero__image {
@@ -159,4 +167,112 @@ main .wrapper {
   color: white;
   padding: 1rem;
   border-radius: 5px;
+}
+
+.btn-secondary {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+header .logo__image,
+header .user {
+  margin-right: 1rem;
+}
+@media (max-width: 81.25em) {
+  header .header__user {
+    display: none;
+  }
+}
+header .menu {
+  display: none;
+  background-color: hsla(30, 35%, 64%, 0.1);
+  padding: 0.1rem 0.25rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+@media (max-width: 81.25em) {
+  header .menu {
+    display: block;
+  }
+}
+
+main .search__container .search {
+  background-color: hsla(30, 35%, 64%, 0.1);
+  padding: 4rem 0 4rem 3rem;
+  margin-bottom: 4rem;
+  border-radius: 5px;
+}
+main .search__container .search .search__title {
+  font-size: 2rem;
+}
+main .search__container .search .search__description {
+  margin: 0.8rem 0;
+}
+main .search__container .search .search__input {
+  padding: 1rem;
+  background: white;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  margin-right: 0.8rem;
+  font-weight: 500;
+}
+main .search__container .search .search__input img {
+  margin-right: 0.3rem;
+}
+main .search__container .search .add-newCampground-link {
+  text-decoration: underline;
+  color: inherit;
+  margin-top: 0.8rem;
+}
+main .search__container .search .add-newCampground-link:hover {
+  color: black;
+}
+
+main .camps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+@media (max-width: 81.25em) {
+  main .camps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 50em) {
+  main .camps {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+main .camps .camp {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  justify-self: center;
+  align-self: center;
+  padding: 1rem;
+  width: 100%;
+}
+main .camps .camp .camp__image {
+  width: 100%;
+}
+main .camps .camp .camp__image img {
+  width: 100%;
+  border-radius: 5px;
+}
+main .camps .camp h4 {
+  font-size: 1.4rem;
+  margin: 0.8rem 0;
+}
+main .camps .camp .camp__btn {
+  color: black;
+  font-weight: 700;
+  margin-top: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  padding: 4rem 0;
 }/*# sourceMappingURL=style.css.map */

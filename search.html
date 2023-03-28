@@ -10,9 +10,170 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./dist/style.css" />
     <title>Search Page</title>
   </head>
   <body>
-    <h2>Hello search page</h2>
+    <header class="header">
+      <div class="container flex sb">
+        <div class="logo flex center">
+          <img class="logo__image" src="./assets/Logo.svg" alt="logo image" />
+          <a href="./index.html" class="home">Home</a>
+        </div>
+        <div class="header__user flex center">
+          <a href="" class="user">Johndoe</a>
+          <a href="./index.html" class="logout">Logout</a>
+        </div>
+        <div class="menu">
+          <img src="./assets/Hamburger Menu.svg" alt="menu icon" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container search__container">
+        <!-- search -->
+        <div class="search">
+          <h2 class="search__title">Welcome to YelpCamp!</h2>
+          <p class="search__description">
+            View our hand-picked campgrounds from all over the word, or add your
+            own.
+          </p>
+          <form class="search__form flex center" action="">
+            <div class="search__input flex center">
+              <img
+                class="search__image"
+                src="./assets/Search Icon.svg"
+                alt="search icon"
+              />
+              <input type="text" placeholder="Search for camps" />
+            </div>
+            <a href="" class="btn search__btn btn-primary">Search</a>
+          </form>
+          <a class="add-newCampground-link" href="./newCampground.html"
+            >Or add your own campground</a
+          >
+        </div>
+        <!-- camps -->
+        <div class="camps">
+          <div class="camp">
+            <div class="camp__image">
+              <img
+                src="./assets/Camp Images/Compressed Images/Mount Ulap.jpg"
+                alt="camp image"
+              />
+            </div>
+            <h4 class="camp__title">Mount Ulap</h4>
+            <p class="camp__description">
+              One of the most famous hikes in Benguet is Mt Ulap in Itogon.
+            </p>
+            <a
+              href="./individualCampground.html"
+              class="btn btn-secondary camp__btn"
+              >View Campground</a
+            >
+          </div>
+
+          <div class="camp">
+            <div class="camp__image">
+              <img
+                src="./assets/Camp Images/Compressed Images/Calaguas Island.jpg"
+                alt="camp image"
+              />
+            </div>
+            <h4 class="camp__title">Calaguas Islands</h4>
+            <p class="camp__description">
+              A paradise of islands that can rival the white sand beauty of
+              Boracay.
+            </p>
+            <a
+              href="./individualCampground.html"
+              class="btn btn-secondary camp__btn"
+              >View Campground</a
+            >
+          </div>
+
+          <div class="camp">
+            <div class="camp__image">
+              <img
+                src="./assets/Camp Images/Compressed Images/Onay Beach.jpg"
+                alt="camp image"
+              />
+            </div>
+            <h4 class="camp__title">Onay Beach</h4>
+            <p class="camp__description">
+              This is one of the best beach camping sites, beautiful and
+              pristine.
+            </p>
+            <a
+              href="./individualCampground.html"
+              class="btn btn-secondary camp__btn"
+              >View Campground</a
+            >
+          </div>
+
+          <div class="camp">
+            <div class="camp__image">
+              <img
+                src="./assets/Camp Images/Compressed Images/Seven Sisters Waterfall.jpg"
+                alt="camp image"
+              />
+            </div>
+            <h4 class="camp__title">Seven Sisters Waterfall</h4>
+            <p class="camp__description">
+              The Seven Sisters is the 39th tallest waterfall in Norway.
+            </p>
+            <a
+              href="./individualCampground.html"
+              class="btn btn-secondary camp__btn"
+              >View Campground</a
+            >
+          </div>
+
+          <div class="camp">
+            <div class="camp__image">
+              <img
+                src="./assets/Camp Images/Compressed Images/Latik Riverside.jpg"
+                alt="camp image"
+              />
+            </div>
+            <h4 class="camp__title">Latik Riverside</h4>
+            <p class="camp__description">
+              Philippines is one of the most dazzling countries in all of Asia.
+            </p>
+            <a
+              href="./individualCampground.html"
+              class="btn btn-secondary camp__btn"
+              >View Campground</a
+            >
+          </div>
+
+          <div class="camp">
+            <div class="camp__image">
+              <img
+                src="./assets/Camp Images/Compressed Images/Buloy Springs.jpg"
+                alt="camp image"
+              />
+            </div>
+            <h4 class="camp__title">Buloy Springs</h4>
+            <p class="camp__description">
+              This is one of the best beach camping sites, beautiful and
+              pristine.
+            </p>
+            <a
+              href="./individualCampground.html"
+              class="btn btn-secondary camp__btn"
+              >View Campground</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="search__footer">
+      <div class="container">
+        <div class="logo footer__logo">
+          <img src="./assets/Logo.svg" alt="logo image" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,6 +1,6 @@
 @use "../utils/" as u;
 .container {
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
   @include u.breakpoint("1350") {
     max-width: 90%;
