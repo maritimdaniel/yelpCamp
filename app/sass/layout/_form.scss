@@ -1,0 +1,35 @@
+@use "../utils/" as u;
+main {
+  .form {
+    display: block;
+    width: 100%;
+    .form__wrapper {
+      margin: 0 auto;
+      @include u.breakpoint("800") {
+        margin: 0;
+      }
+      label {
+        display: block;
+        margin-bottom: 1rem;
+      }
+      textarea {
+        display: block;
+        border-radius: 5px;
+        background-color: #ededed;
+        padding: 1rem;
+        color: #595959;
+        border: none;
+        width: 100%;
+        font-size: inherit;
+        min-height: 220px;
+        overflow: auto;
+        resize: none;
+      }
+      .form__btn {
+        background: black;
+        color: #fff;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

@@ -198,6 +198,8 @@ main .wrapper {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
+  text-align: center;
+  border-radius: 5px;
 }
 
 main .search__container .search {
@@ -358,4 +360,51 @@ main .individualCampground__container .reviews .review__btn {
 }
 main .individualCampground__container .reviews .review__btn img {
   margin-right: 0.5rem;
+}
+
+main .comment__container .form .comment__form--wrapper {
+  max-width: 534px;
+}
+main .comment__container .form .comment__form--wrapper h1 {
+  margin-bottom: 1.8rem;
+}
+@media (max-width: 25em) {
+  main .comment__container .form .comment__form--wrapper h1 {
+    font-size: 1.6rem;
+  }
+}
+
+main .form {
+  display: block;
+  width: 100%;
+}
+main .form .form__wrapper {
+  margin: 0 auto;
+}
+@media (max-width: 50em) {
+  main .form .form__wrapper {
+    margin: 0;
+  }
+}
+main .form .form__wrapper label {
+  display: block;
+  margin-bottom: 1rem;
+}
+main .form .form__wrapper textarea {
+  display: block;
+  border-radius: 5px;
+  background-color: #ededed;
+  padding: 1rem;
+  color: #595959;
+  border: none;
+  width: 100%;
+  font-size: inherit;
+  min-height: 220px;
+  overflow: auto;
+  resize: none;
+}
+main .form .form__wrapper .form__btn {
+  background: black;
+  color: #fff;
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

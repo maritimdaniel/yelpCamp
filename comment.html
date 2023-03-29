@@ -10,9 +10,51 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./dist/style.css" />
     <title>New Campground</title>
   </head>
   <body>
-    <h2>Leave a comment</h2>
+    <!-- header -->
+    <header class="header">
+      <div class="container flex sb">
+        <div class="logo flex center">
+          <img class="logo__image" src="./assets/Logo.svg" alt="logo image" />
+          <a href="./index.html" class="home">Home</a>
+        </div>
+        <div class="header__navigation flex center">
+          <a href="" class="user">Johndoe</a>
+          <a href="./index.html" class="logout">Logout</a>
+        </div>
+        <div class="menu">
+          <img src="./assets/Hamburger Menu.svg" alt="menu icon" />
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="container comment__container">
+        <form class="form comment__form" action="">
+          <div class="form__wrapper comment__form--wrapper">
+            <h1>Add New Comment</h1>
+            <label class="form__label" for="description">Description</label>
+            <textarea
+              class="form__textarea"
+              placeholder="This was probably the best camp i’ve visited this past year, definitely recommend visiting any time soon."
+            ></textarea>
+            <a href="" class="btn form__btn btn-secondary post-comment"
+              >Post Comment</a
+            >
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="search__footer">
+      <div class="container">
+        <div class="logo footer__logo">
+          <img src="./assets/Logo.svg" alt="logo image" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
