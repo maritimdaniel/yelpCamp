@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>New Campground</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container flex sb">
+        <div class="logo flex center">
+          <img class="logo__image" src="./assets/Logo.svg" alt="logo image" />
+          <a href="./index.html" class="home">Home</a>
+        </div>
+        <div class="header__navigation flex center">
+          <a href="" class="user">Johndoe</a>
+          <a href="./index.html" class="logout">Logout</a>
+        </div>
+        <div class="menu">
+          <img src="./assets/Hamburger Menu.svg" alt="menu icon" />
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="container comment__container">
+        <form class="form comment__form" action="">
+          <div class="form__wrapper campground__form--wrapper">
+            <h1>Add New Campground</h1>
+            <label class="form__label" for="Campground Name"
+              >Campground Name</label
+            >
+            <input
+              class="campground--name"
+              type="text"
+              placeholder="Seven Sisters Waterfall"
+            />
+            <label class="form__label" for="price">Price</label>
+            <input class="campground--price" type="text" placeholder="$149" />
+            <label class="form__label" for="image">Image</label>
+            <input
+              class="campground--image"
+              type="text"
+              placeholder="www.thepinoytraveler.com/2018/09/03"
+            />
+            <label class="form__label" for="description">Description</label>
+            <textarea
+              class="form__textarea campground--description"
+              placeholder="The Seven Sisters is the 39th tallest waterfall in Norway. The 410-metre tall waterfall consists of seven separate streams, and the tallest of the seven has a free fall that measures 250 metres. The waterfall is located along the Geirangerfjorden in Stranda Municipality in Møre og Romsdal country, Norway."
+            ></textarea>
+            <a href="" class="btn form__btn btn-secondary add-campground"
+              >Add Campground</a
+            >
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="search__footer">
+      <div class="container">
+        <div class="logo footer__logo">
+          <img src="./assets/Logo.svg" alt="logo image" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

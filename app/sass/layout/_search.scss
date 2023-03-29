@@ -21,6 +21,12 @@ main {
         border-radius: 5px;
         margin-right: 0.8rem;
         font-weight: 500;
+        input {
+          font-size: inherit;
+        }
+        ::placeholder {
+          color: rgb(162, 162, 162);
+        }
 
         img {
           margin-right: 0.3rem;
