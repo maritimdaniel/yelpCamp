@@ -10,9 +10,106 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./dist/style.css" />
     <title>Individual Campground</title>
   </head>
   <body>
-    <h2>Hello from individual campground</h2>
+    <!-- footer -->
+    <header class="header">
+      <div class="container flex sb">
+        <div class="logo flex center">
+          <img class="logo__image" src="./assets/Logo.svg" alt="logo image" />
+          <a href="./index.html" class="home">Home</a>
+        </div>
+        <div class="header__navigation flex center">
+          <a href="./signIn.html" class="logIn">Login</a>
+          <a class="btn btn-primary" href="./signUp.html" class="signUp"
+            >Create an Account</a
+          >
+        </div>
+        <div class="menu">
+          <img src="./assets/Hamburger Menu.svg" alt="menu icon" />
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="container individualCampground__container flex sb">
+        <div class="map">
+          <div class="map__image">
+            <img src="./assets/Map.png" alt="map image" />
+          </div>
+        </div>
+        <div class="campground__information">
+          <div class="campground">
+            <div class="campground__image">
+              <img
+                src="./assets/Camp Images/Compressed Images/Mount Ulap.jpg"
+                alt="camp image"
+              />
+            </div>
+            <div class="campground__title--wrapper flex center sb">
+              <h4 class="campground__title">Mount Ulap</h4>
+              <p class="campground__price">$104.99/night</p>
+            </div>
+            <p class="campground__description">
+              Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point
+              trail located near Tuba, Benguet, Philippines that offers the
+              chance to see wildlife and is rated as moderate. The trail is
+              primarily used for hiking.
+            </p>
+            <p class="submittedBy">
+              Submitted by <span class="submitter">Andrew Mike</span>
+            </p>
+          </div>
+          <div class="reviews">
+            <div class="review__wrapper">
+              <div class="reviewer__information flex center sb">
+                <h4 class="reviewer">Adam Jones</h4>
+                <div class="review__date">13h ago</div>
+              </div>
+              <p class="review">
+                Honestly one of the best experiences ever, took us a while to
+                figure out how to get there but it was amazing!
+              </p>
+            </div>
+            <div class="review__wrapper">
+              <div class="reviewer__information flex center sb">
+                <h4 class="reviewer">Isaac Dylan</h4>
+                <div class="review__date">1 day ago</div>
+              </div>
+              <p class="review">
+                Traveling changes you as a person, you gain more perspective,
+                this is the perfect spot to do that.
+              </p>
+            </div>
+            <div class="review__wrapper">
+              <div class="reviewer__information flex center sb">
+                <h4 class="reviewer">Hudson Luca</h4>
+                <div class="review__date">3 days ago</div>
+              </div>
+              <p class="review">
+                Definitely recommend going there, not too far and not a lot of
+                people to ruin the experience.
+              </p>
+            </div>
+            <div class="review__btn flex">
+              <a href="./comment.html" class="btn btn-primary flex center"
+                ><img src="./assets/Chat Bubble.svg" alt="chat bubble image" />
+                Leave a Review</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="search__footer">
+      <div class="container">
+        <div class="logo footer__logo">
+          <img src="./assets/Logo.svg" alt="logo image" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

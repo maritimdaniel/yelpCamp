@@ -1,10 +1,35 @@
+@use "../utils/" as u;
 header {
   padding: 3rem 0;
   a {
     color: rgb(99, 99, 99);
     font-weight: 500;
   }
-  a:hover {
+  a:hover:not(.btn) {
     color: rgb(16, 16, 16);
+  }
+}
+
+header {
+  .logo__image,
+  .user,
+  .logIn {
+    margin-right: 1rem;
+  }
+  .header__navigation,
+  .home {
+    @include u.breakpoint("1300") {
+      display: none;
+    }
+  }
+  .menu {
+    display: none;
+    background-color: hsla(30, 35%, 64%, 0.1);
+    padding: 0.1rem 0.25rem;
+    border-radius: 3px;
+    cursor: pointer;
+    @include u.breakpoint("1300") {
+      display: block;
+    }
   }
 }

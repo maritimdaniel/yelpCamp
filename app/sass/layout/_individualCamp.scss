@@ -1,0 +1,90 @@
+@use "../utils/" as u;
+
+main {
+  .individualCampground__container {
+    @include u.breakpoint("800") {
+      flex-direction: column-reverse;
+    }
+    gap: 2rem;
+    .map {
+      flex: 1;
+      .map__image {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 3rem;
+        img {
+          width: 100%;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .individualCampground__container {
+    .campground__information {
+      flex: 2;
+      .campground {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 3rem;
+        .campground__image {
+          width: 100%;
+          img {
+            width: 100%;
+            border-radius: 3px;
+          }
+        }
+
+        .campground__title--wrapper {
+          margin: 1rem 0;
+          .campground__title {
+            font-size: 1.8rem;
+          }
+          .campground__price {
+            font-weight: 600;
+          }
+        }
+
+        .campground__description {
+          margin-bottom: 1rem;
+          width: 95%;
+        }
+
+        .submittedBy {
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .individualCampground__container {
+    .reviews {
+      border: 1px solid #ccc;
+      padding: 3rem;
+      border-radius: 5px;
+      margin-top: 2rem;
+      .review__wrapper {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        .reviewer__information {
+          margin-bottom: 1rem;
+        }
+      }
+      .review__btn {
+        justify-content: flex-end;
+        @include u.breakpoint("800") {
+          justify-content: flex-start;
+        }
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}

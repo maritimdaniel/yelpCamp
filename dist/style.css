@@ -16,7 +16,8 @@ body {
   height: 100%;
   font-family: "Archivo", sans-serif;
   background-color: hsla(30, 35%, 64%, 0.1);
-  color: rgb(99, 99, 99);
+  color: #595959;
+  font-size: 1.1rem;
 }
 
 body .flex {
@@ -43,10 +44,10 @@ h4 {
 p {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.2;
-  font-size: 1rem;
+  line-height: 1.4;
+  font-size: 1.1rem;
   font-weight: 500;
-  color: rgb(99, 99, 99);
+  color: #595959;
 }
 
 a,
@@ -89,8 +90,32 @@ header a {
   color: rgb(99, 99, 99);
   font-weight: 500;
 }
-header a:hover {
+header a:hover:not(.btn) {
   color: rgb(16, 16, 16);
+}
+
+header .logo__image,
+header .user,
+header .logIn {
+  margin-right: 1rem;
+}
+@media (max-width: 81.25em) {
+  header .header__navigation,
+  header .home {
+    display: none;
+  }
+}
+header .menu {
+  display: none;
+  background-color: hsla(30, 35%, 64%, 0.1);
+  padding: 0.1rem 0.25rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+@media (max-width: 81.25em) {
+  header .menu {
+    display: block;
+  }
 }
 
 main .hero__image {
@@ -175,28 +200,6 @@ main .wrapper {
   width: 100%;
 }
 
-header .logo__image,
-header .user {
-  margin-right: 1rem;
-}
-@media (max-width: 81.25em) {
-  header .header__user {
-    display: none;
-  }
-}
-header .menu {
-  display: none;
-  background-color: hsla(30, 35%, 64%, 0.1);
-  padding: 0.1rem 0.25rem;
-  border-radius: 3px;
-  cursor: pointer;
-}
-@media (max-width: 81.25em) {
-  header .menu {
-    display: block;
-  }
-}
-
 main .search__container .search {
   background-color: hsla(30, 35%, 64%, 0.1);
   padding: 4rem 0 4rem 3rem;
@@ -275,4 +278,84 @@ main .camps .camp .camp__btn {
 
 footer {
   padding: 4rem 0;
+}
+
+main .individualCampground__container {
+  gap: 2rem;
+}
+@media (max-width: 50em) {
+  main .individualCampground__container {
+    flex-direction: column-reverse;
+  }
+}
+main .individualCampground__container .map {
+  flex: 1;
+}
+main .individualCampground__container .map .map__image {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3rem;
+}
+main .individualCampground__container .map .map__image img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+main .individualCampground__container .campground__information {
+  flex: 2;
+}
+main .individualCampground__container .campground__information .campground {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3rem;
+}
+main .individualCampground__container .campground__information .campground .campground__image {
+  width: 100%;
+}
+main .individualCampground__container .campground__information .campground .campground__image img {
+  width: 100%;
+  border-radius: 3px;
+}
+main .individualCampground__container .campground__information .campground .campground__title--wrapper {
+  margin: 1rem 0;
+}
+main .individualCampground__container .campground__information .campground .campground__title--wrapper .campground__title {
+  font-size: 1.8rem;
+}
+main .individualCampground__container .campground__information .campground .campground__title--wrapper .campground__price {
+  font-weight: 600;
+}
+main .individualCampground__container .campground__information .campground .campground__description {
+  margin-bottom: 1rem;
+  width: 95%;
+}
+main .individualCampground__container .campground__information .campground .submittedBy {
+  font-style: italic;
+}
+
+main .individualCampground__container .reviews {
+  border: 1px solid #ccc;
+  padding: 3rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+main .individualCampground__container .reviews .review__wrapper {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+main .individualCampground__container .reviews .review__wrapper .reviewer__information {
+  margin-bottom: 1rem;
+}
+main .individualCampground__container .reviews .review__btn {
+  justify-content: flex-end;
+}
+@media (max-width: 50em) {
+  main .individualCampground__container .reviews .review__btn {
+    justify-content: flex-start;
+  }
+}
+main .individualCampground__container .reviews .review__btn img {
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
