@@ -1,19 +1,34 @@
+@use "../utils/" as u;
+
 body {
-  width: 100%;
-  height: 100vh;
   .sign--container {
     width: 100%;
     height: 100vh;
+    @include u.breakpoint("900") {
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+    }
     .sign__wrapper {
       flex-basis: 60%;
+      @include u.breakpoint("900") {
+        width: 100%;
+        height: auto;
+      }
       .sign {
         width: 60%;
         margin: 3rem auto 0 auto;
+        @include u.breakpoint("900") {
+          width: 100%;
+        }
         .backto {
           color: inherit;
         }
         form {
           margin-top: 8rem;
+          @include u.breakpoint("900") {
+            margin-top: 3rem;
+          }
           .cta {
             margin-top: 1rem;
             span {
@@ -28,11 +43,20 @@ body {
     }
     .testimony--wrapper {
       flex-basis: 40%;
-      background: #faeedc !important;
+      background: #faeedc;
+      @include u.breakpoint("900") {
+        display: block;
+        width: 100%;
+        background: none;
+      }
       .user__testimony {
         width: 320px;
         height: 320px;
         margin: 50% auto;
+        @include u.breakpoint("900") {
+          width: 100%;
+          margin: 3rem 0 0 0;
+        }
         h2 {
           margin-bottom: 2rem;
         }
