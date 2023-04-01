@@ -438,4 +438,51 @@ main .form .form__wrapper .form__btn {
 
 main .comment__container .form .campground__form--wrapper {
   max-width: 500px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+body .sign--container {
+  width: 100%;
+  height: 100vh;
+}
+body .sign--container .sign__wrapper {
+  flex-basis: 60%;
+}
+body .sign--container .sign__wrapper .sign {
+  width: 60%;
+  margin: 3rem auto 0 auto;
+}
+body .sign--container .sign__wrapper .sign .backto {
+  color: inherit;
+}
+body .sign--container .sign__wrapper .sign form {
+  margin-top: 8rem;
+}
+body .sign--container .sign__wrapper .sign form .cta {
+  margin-top: 1rem;
+}
+body .sign--container .sign__wrapper .sign form .cta span a {
+  text-decoration: underline;
+  color: #009fe0;
+}
+body .sign--container .testimony--wrapper {
+  flex-basis: 40%;
+  background: #faeedc !important;
+}
+body .sign--container .testimony--wrapper .user__testimony {
+  width: 320px;
+  height: 320px;
+  margin: 50% auto;
+}
+body .sign--container .testimony--wrapper .user__testimony h2 {
+  margin-bottom: 2rem;
+}
+body .sign--container .testimony--wrapper .user__testimony img {
+  margin-right: 1rem;
+}
+body .sign--container .testimony--wrapper .user__testimony h4 {
+  margin-bottom: 0.3rem;
 }/*# sourceMappingURL=style.css.map */
