@@ -38,14 +38,19 @@
             View our hand-picked campgrounds from all over the word, or add your
             own.
           </p>
-          <form class="search__form flex center" action="">
+          <form class="search__form flex center" name="search" action="">
             <div class="search__input flex center">
               <img
                 class="search__image"
                 src="./assets/Search Icon.svg"
                 alt="search icon"
               />
-              <input type="text" placeholder="Search for camps" />
+              <input
+                class="search__input"
+                type="text"
+                placeholder="Search for camps"
+                name="search__input"
+              />
             </div>
             <a href="" class="btn search__btn btn-primary">Search</a>
           </form>
@@ -54,7 +59,25 @@
           >
         </div>
         <!-- camps -->
-        <div class="camps"></div>
+        <div class="camps">
+          <!-- <div class="camp">
+            <div class="camp__image">
+              <img
+                src="./assets/Camp Images/Compressed Images/Mount Ulap.jpg"
+                alt="camp image"
+              />
+            </div>
+            <h4 class="camp__title">Mount Ulap</h4>
+            <p class="camp__description">
+              One of the most famous hikes in Benguet is Mt Ulap in Itogon.
+            </p>
+            <a
+              href="./individualCampground.html"
+              class="btn btn-secondary camp__btn"
+              >View Campground</a
+            >
+          </div> -->
+        </div>
       </div>
     </main>
     <footer class="search__footer">

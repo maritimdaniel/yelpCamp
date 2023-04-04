@@ -41,7 +41,7 @@ const data = [
       "This is one of the best beach camping sites, beautiful and pristine.",
   },
 ];
-const camps = document.querySelector(".camps");
+const campContainer = document.querySelector(".camps");
 const html = data
   .map((camp) => {
     return `
@@ -65,7 +65,42 @@ const html = data
         `;
   })
   .join("");
+campContainer.innerHTML = html;
 
-camps.innerHTML = html;
+const camps = Array.from(document.querySelectorAll(".camp"));
+const searchForm = document.forms.search;
+const searchInput = document.querySelector(".search__input");
+const searchBtn = document.querySelector(".search__btn");
+const campsName = data.map((camp) => {
+  return camp.campName;
+});
 
-console.log(html);
+let notice = document.createElement("div");
+notice.classList.add("notice");
+notice.textContent = "No campgrounds found";
+
+searchInput.addEventListener("input", searchCamp);
+searchBtn.addEventListener("click", searchCamp);
+
+function searchCamp() {
+  camps.forEach((camp) => camp.classList.remove("hidden"));
+  notice.remove();
+  campContainer.classList.remove("hidden");
+
+  let searchText = searchForm.elements["search__input"].value.toLowerCase();
+  console.log(searchText);
+
+  let count = 0;
+  for (i = 0; i < campsName.length; i++) {
+    console.log(campsName[i]);
+    if (!campsName[i].toLowerCase().includes(searchText)) {
+      camps[i].classList.add("hidden");
+      count++;
+    }
+  }
+
+  if (count === campsName.length) {
+    campContainer.before(notice);
+    campContainer.classList.add("hidden");
+  }
+}

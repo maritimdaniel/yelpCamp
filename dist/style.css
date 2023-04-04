@@ -267,6 +267,9 @@ main .camps .camp {
   padding: 1rem;
   width: 100%;
 }
+main .camps .camp .camp.hidden {
+  display: none;
+}
 main .camps .camp .camp__image {
   width: 100%;
 }
@@ -285,6 +288,12 @@ main .camps .camp .camp__btn {
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
+}
+main .camps .notice {
+  margin: 2rem;
+}
+main .hidden {
+  display: none;
 }
 
 footer {

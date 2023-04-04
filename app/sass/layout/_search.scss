@@ -65,6 +65,10 @@ main {
       align-self: center;
       padding: 1rem;
       width: 100%;
+
+      .camp.hidden {
+        display: none;
+      }
       .camp__image {
         width: 100%;
         img {
@@ -87,5 +91,12 @@ main {
         text-align: center;
       }
     }
+
+    .notice {
+      margin: 2rem;
+    }
+  }
+  .hidden {
+    display: none;
   }
 }
