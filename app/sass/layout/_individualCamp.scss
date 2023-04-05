@@ -13,6 +13,9 @@ main {
         border: 1px solid #ccc;
         border-radius: 5px;
         padding: 3rem;
+        @include u.breakpoint("500") {
+          padding: 1rem;
+        }
         img {
           width: 100%;
           border-radius: 3px;
@@ -30,6 +33,9 @@ main {
         border: 1px solid #ccc;
         border-radius: 5px;
         padding: 3rem;
+        @include u.breakpoint("500") {
+          padding: 1rem;
+        }
         .campground__image {
           width: 100%;
           img {
@@ -68,6 +74,9 @@ main {
       padding: 3rem;
       border-radius: 5px;
       margin-top: 2rem;
+      @include u.breakpoint("500") {
+        padding: 1rem;
+      }
       .review__wrapper {
         border-bottom: 1px solid #ccc;
         margin-bottom: 1rem;

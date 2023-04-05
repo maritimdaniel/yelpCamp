@@ -242,11 +242,23 @@ main .search__container .search {
   margin-bottom: 4rem;
   border-radius: 5px;
 }
+@media (max-width: 31.25em) {
+  main .search__container .search {
+    padding: 1rem;
+  }
+}
 main .search__container .search .search__title {
   font-size: 2rem;
 }
 main .search__container .search .search__description {
   margin: 0.8rem 0;
+}
+@media (max-width: 31.25em) {
+  main .search__container .search form {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 main .search__container .search .search__input--wrapper {
   padding: 1rem;
@@ -351,6 +363,11 @@ main .individualCampground__container .map .map__image {
   border-radius: 5px;
   padding: 3rem;
 }
+@media (max-width: 31.25em) {
+  main .individualCampground__container .map .map__image {
+    padding: 1rem;
+  }
+}
 main .individualCampground__container .map .map__image img {
   width: 100%;
   border-radius: 3px;
@@ -363,6 +380,11 @@ main .individualCampground__container .campground__information .campground {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 3rem;
+}
+@media (max-width: 31.25em) {
+  main .individualCampground__container .campground__information .campground {
+    padding: 1rem;
+  }
 }
 main .individualCampground__container .campground__information .campground .campground__image {
   width: 100%;
@@ -393,6 +415,11 @@ main .individualCampground__container .reviews {
   padding: 3rem;
   border-radius: 5px;
   margin-top: 2rem;
+}
+@media (max-width: 31.25em) {
+  main .individualCampground__container .reviews {
+    padding: 1rem;
+  }
 }
 main .individualCampground__container .reviews .review__wrapper {
   border-bottom: 1px solid #ccc;
