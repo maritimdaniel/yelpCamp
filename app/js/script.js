@@ -112,3 +112,22 @@ function searchCamp() {
     campContainer.classList.add("hidden");
   }
 }
+
+//mobile navigation
+const menuBtn = document.querySelector(".menu--icon");
+const closeBtn = document.querySelector(".close--icon");
+const mobileNav = document.querySelector(".mobile-navigation");
+
+console.log(menuBtn);
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.style.display = "none";
+  closeBtn.style.display = "block";
+  mobileNav.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+  closeBtn.style.display = "none";
+  menuBtn.style.display = "block";
+  mobileNav.style.display = "none";
+});

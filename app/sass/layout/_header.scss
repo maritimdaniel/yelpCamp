@@ -28,8 +28,36 @@ header {
     padding: 0.1rem 0.25rem;
     border-radius: 3px;
     cursor: pointer;
+
+    .close--icon {
+      display: none;
+    }
     @include u.breakpoint("1300") {
       display: block;
     }
+  }
+}
+
+.mobile-navigation {
+  display: none;
+}
+.mobile-navigation__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  background: ghostwhite;
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  a {
+    color: inherit;
+    margin-bottom: 1rem;
+  }
+  a:hover {
+    color: black;
   }
 }
