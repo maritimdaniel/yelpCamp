@@ -4,6 +4,13 @@
   padding: 1rem;
   border-radius: 5px;
 }
+
+.btn-primary:hover {
+  background: white;
+  border: 1px solid black;
+  color: black;
+}
+
 .btn-secondary {
   padding-top: 1rem;
   padding-bottom: 1rem;

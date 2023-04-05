@@ -194,6 +194,12 @@ main .wrapper {
   border-radius: 5px;
 }
 
+.btn-primary:hover {
+  background: white;
+  border: 1px solid black;
+  color: black;
+}
+
 .btn-secondary {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -214,7 +220,7 @@ main .search__container .search .search__title {
 main .search__container .search .search__description {
   margin: 0.8rem 0;
 }
-main .search__container .search .search__input {
+main .search__container .search .search__input--wrapper {
   padding: 1rem;
   background: white;
   border: 1px solid #bdbdbd;
@@ -222,16 +228,16 @@ main .search__container .search .search__input {
   margin-right: 0.8rem;
   font-weight: 500;
 }
-main .search__container .search .search__input input {
+main .search__container .search .search__input--wrapper input {
   font-size: inherit;
 }
-main .search__container .search .search__input ::-moz-placeholder {
+main .search__container .search .search__input--wrapper ::-moz-placeholder {
   color: rgb(162, 162, 162);
 }
-main .search__container .search .search__input ::placeholder {
+main .search__container .search .search__input--wrapper ::placeholder {
   color: rgb(162, 162, 162);
 }
-main .search__container .search .search__input img {
+main .search__container .search .search__input--wrapper img {
   margin-right: 0.3rem;
 }
 main .search__container .search .add-newCampground-link {

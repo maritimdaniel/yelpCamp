@@ -1,46 +1,55 @@
+// camps data
 const data = [
   {
-    id: 1,
+    id: 0,
     image: "./assets/Camp Images/Compressed Images/Mount Ulap.jpg",
     campName: "Mount Ulap",
+    price: "$104.99",
     description:
       "One of the most famous hikes in Benguet is Mt Ulap in Itogon.",
   },
   {
-    id: 2,
+    id: 1,
     image: "./assets/Camp Images/Compressed Images/Calaguas Island.jpg",
     campName: "Calaguas Islands",
+    price: "$68.74",
     description:
       "A paradise of islands that can rival the white sand beauty of Boracay.",
   },
   {
-    id: 3,
+    id: 2,
     image: "./assets/Camp Images/Compressed Images/Onay Beach.jpg",
     campName: "Onay Beach",
+    price: "$98.04",
     description:
       " This is one of the best beach camping sites, beautiful and pristine.",
   },
   {
-    id: 4,
+    id: 3,
     image: "./assets/Camp Images/Compressed Images/Seven Sisters Waterfall.jpg",
     campName: "Seven Sisters Waterfall",
+    price: "$100.00",
     description: "The Seven Sisters is the 39th tallest waterfall in Norway.",
   },
   {
-    id: 5,
+    id: 4,
     image: "./assets/Camp Images/Compressed Images/Latik Riverside.jpg",
     campName: "Latik Riverside",
+    price: "$40.04",
     description:
       "Philippines is one of the most dazzling countries in all of Asia.",
   },
   {
-    id: 6,
+    id: 3,
     image: "./assets/Camp Images/Compressed Images/Buloy Springs.jpg",
     campName: "Buloy Springs",
+    price: "$78.56",
     description:
       "This is one of the best beach camping sites, beautiful and pristine.",
   },
 ];
+
+// displaying the camps dynamically
 const campContainer = document.querySelector(".camps");
 const html = data
   .map((camp) => {
@@ -67,6 +76,7 @@ const html = data
   .join("");
 campContainer.innerHTML = html;
 
+// filtering the camps as per user input
 const camps = Array.from(document.querySelectorAll(".camp"));
 const searchForm = document.forms.search;
 const searchInput = document.querySelector(".search__input");
@@ -88,11 +98,9 @@ function searchCamp() {
   campContainer.classList.remove("hidden");
 
   let searchText = searchForm.elements["search__input"].value.toLowerCase();
-  console.log(searchText);
 
   let count = 0;
   for (i = 0; i < campsName.length; i++) {
-    console.log(campsName[i]);
     if (!campsName[i].toLowerCase().includes(searchText)) {
       camps[i].classList.add("hidden");
       count++;
