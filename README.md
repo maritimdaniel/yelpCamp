@@ -6,7 +6,7 @@
 
 Visit the live website hosted on netlify.
 
-- [YelpCamp website]()
+- [YelpCamp website](https://codewellyelpcamp.netlify.app/)
 
 ## Features
 
